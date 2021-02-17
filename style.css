@@ -1,0 +1,295 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+.mid-content {
+    max-width: 1170px;
+    margin: auto;
+}
+
+figure,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+input[type] {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header-section {
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 5px solid #0002fb;
+}
+
+.header-left {
+    width: 30%;
+    margin: 0;
+}
+
+.header-left a {
+    color: #0002fb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-right {
+    width: 70%;
+}
+
+.header-right ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.header-right ul li a {
+    display: block;
+    color: #85778d;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 42px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.header-right ul li a:hover {
+    color: #0002fb;
+}
+
+
+/* Banner section */
+.banner-section {
+    background: url(https://insdrcdn.com/media/attachments/a/ac/a60076aca.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,.2);
+    position: relative;
+
+}
+
+.banner-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.banner-content h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.banner-content a {
+    background-color: #4272d8;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.banner-content a:hover{
+    color: #222;
+}
+.banner-content a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0%;
+    background-color: #0002fb;
+    
+    z-index: -1;
+    transition: .5s;
+}
+.banner-content a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 0%;
+    background-color: #0002fb;
+    
+    z-index: -1;
+    transition: .5s;
+}
+.banner-content a:hover::before{
+    height: 50%;
+    
+}
+.banner-content a:hover::after{
+    height: 50%;
+    
+}
+
+
+.service {
+    padding: 50px 0;
+}
+
+.service-left {
+    width: 40%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+.service-right {
+    width: 55%;
+    box-sizing: border-box;
+}
+
+.service-right h1 {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.service-right p {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.service-right h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.contact-section {
+    /*! text-align: center; */
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+}
+
+.contact-left {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.contact-left {}
+
+details {}
+
+details p {}
+
+.contact-right {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.contact-right {}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    background-color: #4272d8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+}
+  input[type=submit]:hover{
+      background-color: #0002fb;
+  }
+/* input[type=submit]::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0002fb;
+    z-index: -1;
+    transition: .5s;
+}
+
+input[type=submit]::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0002fb;
+    z-index: -1;
+    transition: .5s;
+}
+input[type=submit]:hover::before{
+    width: 50%;
+}
+input[type=submit]:hover::after{
+    width: 50%;
+} */
+footer{
+    background-color: #171a21;
+    padding: 20px 0;
+}
+section{}
+.footer-section p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
